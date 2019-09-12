@@ -1,0 +1,22 @@
+{
+  "plugins": [
+    "jest"
+  ],
+  "extends": [
+    "airbnb",
+    "plugin:jest/recommended"
+  ],
+  "rules": {
+    "import/prefer-default-export": "off",
+    "no-console":0
+  },
+  "env": {
+    "jest/globals": true
+  },
+  "overrides": {
+    "files": [ "src/*.test.js" ],
+    "rules": {
+      "global-require": 0
+    },
+  },
+}
